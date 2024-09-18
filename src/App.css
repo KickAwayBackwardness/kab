@@ -1,0 +1,191 @@
+::-webkit-scrollbar {
+  display: none;
+}
+/* Hexaframe CF */
+
+@font-face {
+  font-family: "Hexaframe CF";
+  src: url("HexaframeCF-Bold.eot");
+  src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"),
+    url("HexaframeCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("HexaframeCF-Bold.woff2") format("woff2"),
+    url("HexaframeCF-Bold.woff") format("woff"),
+    url("HexaframeCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* IBM Plex Mono */
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("IBMPlexMono-ExtraLight.ttf") format("ttf"),
+    url("IBMPlexMono-Light.ttf") format("ttf"),
+    url("IBMPlexMono-Medium.ttf") format("ttf"),
+    url("IBMPlexMono-Regular.ttf") format("ttf"),
+    url("IBMPlexMono-SemiBold.ttf") format("ttf"),
+    url("IBMPlexMono-Thin.ttf") format("ttf");
+  font-weight: light;
+  font-style: normal;
+}
+
+/* WHEY */
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-Regular.eot");
+  src: local("Whyte Regular"), local("Whyte-Regular"),
+    url("Whyte-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Regular.woff2") format("woff2"),
+    url("Whyte-Regular.woff") format("woff"),
+    url("Whyte-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-ExtraLight.eot");
+  src: local("Whyte ExtraLight"), local("Whyte-ExtraLight"),
+    url("Whyte-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-ExtraLight.woff2") format("woff2"),
+    url("Whyte-ExtraLight.woff") format("woff"),
+    url("Whyte-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-Medium.eot");
+  src: local("Whyte Medium"), local("Whyte-Medium"),
+    url("Whyte-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Medium.woff2") format("woff2"),
+    url("Whyte-Medium.woff") format("woff"),
+    url("Whyte-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-Thin.eot");
+  src: local("Whyte Thin"), local("Whyte-Thin"),
+    url("Whyte-Thin.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Thin.woff2") format("woff2"),
+    url("Whyte-Thin.woff") format("woff"),
+    url("Whyte-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* WHEY INKTRAP */
+@font-face {
+  font-family: "Whyte Inktrap";
+  src: url("WhyteInktrap-Black.eot");
+  src: local("WhyteInktrap-Black"), local("WhyteInktrap-Black"),
+    url("/src/assets/fonts/WheyInktrap/WhyteInktrap-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("WhyteInktrap-Black.woff2") format("woff2"),
+    url("WhyteInktrap-Black.woff") format("woff"),
+    url("WhyteInktrap-Black.ttf") format("truetype");
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte Inktrap";
+  src: url("WhyteInktrap-Bold.eot");
+  src: local("WhyteInktrap-Bold"), local("WhyteInktrap-Bold"),
+    url("WhyteInktrap-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/src/assets/fonts/WheyInktrap/WhyteInktrap-Bold.woff2") format("woff2"),
+    url("WhyteInktrap-Bold.woff") format("woff"),
+    url("WhyteInktrap-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte Inktrap";
+  src: url("WhyteInktrap-Light.eot");
+  src: local("WhyteInktrap-Light"), local("WhyteInktrap-Light"),
+    url("WhyteInktrap-Light.eot?#iefix") format("embedded-opentype"),
+    url("/src/assets/fonts/WheyInktrap/WhyteInktrap-Light.woff2")
+      format("woff2"),
+    url("WhyteInktrap-Light.woff") format("woff"),
+    url("WhyteInktrap-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+
+.text-hexa {
+  font-family: "Hexaframe CF";
+}
+
+.text-ibm {
+  font-family: "IBM Plex Mono";
+}
+
+.text-whyte {
+  font-family: "Whyte";
+}
+
+.text-whyteInktrap {
+  font-family: "Whyte Inktrap";
+  top: 0.3rem;
+  position: relative;
+}
+/* parallax imgae */
+.image-container {
+  width: 100vw;
+  aspect-ratio: 1600 / 750;
+  overflow: hidden;
+}
+
+.image-container > img {
+  width: 100vw;
+  aspect-ratio: 1600 / 750;
+  scale: 1.25;
+  object-fit: contain;
+}
+
+.news-item-photo-container {
+  width: 100%;
+  aspect-ratio: 670 / 400;
+  overflow: hidden;
+}
+
+.news-item-photo-container > img {
+  width: 100%;
+  aspect-ratio: 670 / 400;
+  scale: 1.3;
+  object-fit: contain;
+}
+
+.continue-image-container {
+  width: 100%;
+  height: 70rem;
+  overflow: hidden;
+}
+
+.continue-image-container > img {
+  width: 100%;
+  height: 70rem;
+  scale: 1.45;
+  object-fit: contain;
+}
+
+.image-container-spec-news {
+  width: 100vw;
+  aspect-ratio: 1600 / 690;
+  overflow: hidden;
+}
+
+.image-container-spec-news > img {
+  width: 100vw;
+  aspect-ratio: 1600 / 690;
+  scale: 1.2;
+  object-fit: contain;
+}
+
+.news-item-left .news-item:last-child a {
+  border: none;
+}

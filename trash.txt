@@ -1,0 +1,23 @@
+<div className=" main absolute max-w-main-content w-full h-main-content top-[52px] right-[1px] overflow-x-hidden rounded-br-[10px]">
+          <div className="p-[36px]">
+            <NewspapperText />
+            <SubNewspaper />
+          </div>
+
+          {/*  */}
+
+          <Background />
+          {/*  */}
+          <div className="w-full h-[300px] bg-red-200"></div>
+
+          <div className="w-full h-[300px] bg-red-200 mt-[50px]"></div>
+          <div className="w-full h-[300px] bg-red-600 mt-[50px]"></div>
+        </div>
+
+
+
+
+
+        text bij over z-2
+        -bgwhite(after) z-3 => bgimage z-4
+        text menu z-5
