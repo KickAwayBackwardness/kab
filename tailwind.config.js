@@ -24,6 +24,7 @@ export default {
         footer_code_text: "var(--footer-code-text-font-size)",
         spec_main_title: "var(--title-font-size)",
         spec_desc_title: "var(--title-desc-font-size)",
+        spec_pharagraph: "var(--spec-news-pharagraph-font-size)",
       },
 
       backgroundImage: {
