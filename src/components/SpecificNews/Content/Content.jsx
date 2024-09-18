@@ -3,9 +3,7 @@ import RichText from "./RichText";
 
 const Content = () => {
   return (
-    <div className="min-h-[100vh] text-[25px] ml-[320px]">
-      <RichText />
-      <RichText />
+    <div className="max-w-content h-fit ml-content_left pt-[var(--spec-news-content-padding-top)]">
       <RichText />
     </div>
   );

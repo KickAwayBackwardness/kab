@@ -155,6 +155,22 @@
   --title-desc-font-size: 1.5rem;
   --title-desc-letter-spacing: -0.02em;
   --title-desc-line-height: 1.3;
+
+  /* Content */
+  --spec-news-content-padding-top: 10rem;
+  --spec-news-margin-center: 0 auto;
+  /* pharagraph */
+  --spec-news-pharagraph-width: 64.3rem;
+  --spec-news-pharagraph-font-size: 1.8rem;
+  --spec-news-pharagraph-line-height: 1.5;
+  --spec-news-pharagraph-letter-spacing: normal;
+  /* link text */
+  --spec-news-link-text-margin: 0 0.4rem;
+  --spec-news-link-font-weight: 500;
+  /* photo */
+  --spec-news-photo-width: 111.2rem;
+  --spec-news-photo-margin-y: 10rem;
+  --spec-news-desc-photo-margin-top: 1.4rem;
 }
 
 body {
