@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/SpecificNews/Header/Header";
 import Cover from "../components/SpecificNews/Cover/Cover";
-import Content from "../components/SpecificNews/Content/Content";
+import Article from "../components/SpecificNews/Content/Article";
 import NewsHeading from "../components/SpecificNews/NewsHeading/NewsHeading";
 
 const SpecificNews = () => {
@@ -10,7 +10,7 @@ const SpecificNews = () => {
       <Header />
       <NewsHeading />
       <Cover />
-      <Content />
+      <Article />
     </div>
   );
 };
