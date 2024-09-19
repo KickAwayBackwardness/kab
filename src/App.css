@@ -186,6 +186,27 @@
   object-fit: contain;
 }
 
+.image-container-spec-news-explore-item {
+  width: 100%;
+  aspect-ratio: var(--spec-news-explore-item-photo-aspect-ratio);
+  overflow: hidden;
+  border-radius: var(--spec-news-explore-item-photo-border-radius);
+  -webkit-border-radius: var(--spec-news-explore-item-photo-border-radius);
+  -moz-border-radius: var(--spec-news-explore-item-photo-border-radius);
+  -ms-border-radius: var(--spec-news-explore-item-photo-border-radius);
+  -o-border-radius: var(--spec-news-explore-item-photo-border-radius);
+  margin-top: var(--spec-news-explore-item-photo-margin-top);
+}
+
+.image-container-spec-news-explore-item > img {
+  width: 100%;
+  aspect-ratio: var(--spec-news-explore-item-photo-aspect-ratio);
+  scale: 1.2;
+  object-fit: contain;
+}
+
 .news-item-left .news-item:last-child a {
   border: none;
 }
+
+/* CK EDITOR */

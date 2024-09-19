@@ -123,6 +123,7 @@
   /*  */
   /*  */
   /* SPECIFIC NEWS */
+
   /* ------------COVER image */
   --img-top-interverted-cut-height-spec-news: var(
     --img-top-interverted-cut-height
@@ -157,7 +158,7 @@
   --title-desc-line-height: 1.3;
 
   /* Content */
-  --spec-news-content-padding-top: 10rem;
+  --spec-news-content-padding-y: 10rem;
   --spec-news-margin-center: 0 auto;
   /* pharagraph */
   --spec-news-pharagraph-width: 64.3rem;
@@ -171,6 +172,48 @@
   --spec-news-photo-width: 111.2rem;
   --spec-news-photo-margin-y: 10rem;
   --spec-news-desc-photo-margin-top: 1.4rem;
+  /* list */
+  --spec-news-list-ol-ul-margin: 4rem auto;
+  --spec-news-list-padding-left: 2em;
+  --spec-news-list-number-padding-left: 3em;
+  --spec-news-list-margin-bottom: 2.4rem;
+
+  /* section heading */
+  --spec-news-section-heading-font-size: 4.2rem;
+  --spec-news-section-heading-font-weight: 500;
+  --spec-news-section-heading-letter-spacing: -0.04em;
+  --spec-news-section-heading-line-height: 0.975;
+  --spec-news-section-heading-margin-y: 4.5rem;
+
+  /* section sub heading */
+  --spec-news-section-sub-heading-font-size: 2.2rem;
+  --spec-news-section-sub-heading-font-weight: 500;
+  --spec-news-section-sub-heading-letter-spacing: -0.04em;
+  --spec-news-section-sub-heading-line-height: 0.975;
+  --spec-news-section-sub-heading-margin: 6.4rem 0 1.6rem;
+  /* devider */
+  --spec-news-section-devider-margin-y: 10rem;
+  /* Explore */
+  --spec-news-explore-left-padding-top: 3.5rem;
+  --spec-news-explore-left-padding-left: 3.5rem;
+  --spec-news-explore-left-font-size: 3.6rem;
+  --spec-news-explore-left-font-weight: 500;
+  --spec-news-explore-left-letter-spacing: -0.06em;
+  --spec-news-explore-left-line-height: 0.85;
+
+  --spec-news-explore-item-min-width: 53rem;
+  --spec-news-explore-item-width: 53rem;
+  --spec-news-explore-item-padding: 3.5rem 2.3rem 2.3rem;
+
+  --spec-news-explore-item-title-font-size: 2rem;
+  --spec-news-explore-item-title-font-weight: 500;
+  --spec-news-explore-item-title-letter-spacing: -0.05em;
+  --spec-news-explore-item-title-line-height: 1.1;
+  --spec-news-explore-item-title-margin-top: 1.4rem;
+
+  --spec-news-explore-item-photo-aspect-ratio: 484 / 325;
+  --spec-news-explore-item-photo-border-radius: 0.5rem;
+  --spec-news-explore-item-photo-margin-top: 2.5rem;
 }
 
 body {

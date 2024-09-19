@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,xml, html}"],
   theme: {
     extend: {
       colors: {
@@ -25,6 +25,12 @@ export default {
         spec_main_title: "var(--title-font-size)",
         spec_desc_title: "var(--title-desc-font-size)",
         spec_pharagraph: "var(--spec-news-pharagraph-font-size)",
+        spec_section_heading: "var(--spec-news-section-heading-font-size)",
+        spec_section_sub_heading:
+          "var(--spec-news-section-sub-heading-font-size)",
+        spec_explore_left: "var(--spec-news-explore-left-font-size)",
+        spec_explore_item_title:
+          "var(--spec-news-explore-item-title-font-size)",
       },
 
       backgroundImage: {
@@ -96,6 +102,8 @@ export default {
 
         spec_title_left_column_width:
           "calc(100vw * var(--title-left-column-width) - var(--padding-outer) - var(--frame-line-width) - var(--sidebar-column-width) - var(--frame-line-width))",
+        explore_left_width:
+          "calc(100vw / var(--footer-column) - var(--padding-outer) - var(--frame-line-width) - var(--sidebar-column-width) - var(--frame-line-width))",
       },
       height: {
         "main-content": "calc( 100vh - 90px - 3px )",
