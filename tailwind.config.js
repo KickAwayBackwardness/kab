@@ -104,6 +104,12 @@ export default {
           "calc(100vw * var(--title-left-column-width) - var(--padding-outer) - var(--frame-line-width) - var(--sidebar-column-width) - var(--frame-line-width))",
         explore_left_width:
           "calc(100vw / var(--footer-column) - var(--padding-outer) - var(--frame-line-width) - var(--sidebar-column-width) - var(--frame-line-width))",
+        explore_list_width:
+          "calc(100% + var(--frame-line-width) + var(--frame-line-width))",
+        explore_item_width:
+          "calc(100% + var(--frame-line-width) + var(--frame-line-width))",
+        explore_icon_frame_width:
+          "calc(var(--spec-news-explore-icon-box-size) + var(--frame-line-width))",
       },
       height: {
         "main-content": "calc( 100vh - 90px - 3px )",
@@ -128,6 +134,8 @@ export default {
           "calc(100vh -  var(--padding-outer) - var(--frame-line-width) - var(--sub-menu-height) - var(--frame-line-width) - var(--frame-line-width) - var(--padding-outer))",
         footer_height:
           "calc(100vh + var(--footer-bottom-height) + var(--padding-outer) +  var(--frame-line-width) + var(--sub-menu-height) + var(--frame-line-width))",
+        explore_item_height:
+          "calc(100% + var(--frame-line-width) + var(--frame-line-width))",
       },
       objectPosition: {
         "center-bottom": "60% 35%",
@@ -135,6 +143,7 @@ export default {
       borderRadius: {
         frame: "var(--radius-default)",
         side_menu: "var(--radius-default)",
+        explore_item: "var(--spec-news-explore-item-border-radius)",
       },
       borderWidth: {
         frame: "var(--frame-line-width)",
@@ -159,6 +168,8 @@ export default {
           "calc(var(--button-frame-width) - (var(--button-frame-corner-size) * 2 ))",
         button_frame_corner_effect_top:
           "calc(var(--button-frame-height) - (var(--button-frame-corner-size) * 2 ))",
+        explore_icon_left_arrow_left:
+          "calc(var(--spec-news-explore-icon-box-size) + var(--frame-line-width))",
       },
     },
   },
