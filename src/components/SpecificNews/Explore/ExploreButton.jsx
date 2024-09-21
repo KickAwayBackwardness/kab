@@ -12,17 +12,19 @@ const ExploreButton = () => {
             w-explore_icon_frame_width 
             bg-transparent  aspect-square 
             flex items-center justify-center
-            border-t-frame border-l-frame border-frame_color
+            border-frame border-frame_color border-b-0
+            hover:border-black hover:z-[1] cursor-pointer
         "
         >
           <LeftCarousel />
         </div>
         <div
-          className=" absolute left-0 top-0 
+          className=" absolute left-[-1px] top-0 
             w-explore_icon_frame_width 
             bg-transparent aspect-square 
             flex items-center justify-center
-             border-r-frame border-frame_color
+            border-frame border-frame_color border-b-0
+            hover:border-black cursor-pointer
 
         "
         >

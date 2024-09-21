@@ -8,6 +8,7 @@ import OverlayBackground from "../components/vendors/OverlayBackground";
 import SideMenu from "../components/vendors/SideMenu";
 import ScrollIndicator from "../components/vendors/ScrollIndicator";
 import Footer from "../components/vendors/Footer/Footer";
+import Loading from "../components/vendors/Loading/Loading";
 // import Frame from "../components/vendors/Frame";
 
 const MainLayout = () => {
@@ -21,6 +22,7 @@ const MainLayout = () => {
       <SideMenu />
       <Footer />
       {/* <Audio />  */}
+      <Loading />
     </>
   );
 };
