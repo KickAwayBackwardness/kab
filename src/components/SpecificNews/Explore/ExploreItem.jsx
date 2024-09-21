@@ -6,12 +6,11 @@ import ExploreItemPhotoParallax from "../../vendors/Parallax/ExploreItemPhotoPar
 const ExploreItem = () => {
   return (
     <div
-      className=" group
+      className=" group relative z-[0]
         min-w-[var(--spec-news-explore-item-min-width)]
         w-[var(--spec-news-explore-item-width)]
         p-[var(--spec-news-explore-item-padding)]
-        border-r-frame border-b-frame border-frame_color last:border-r-transparent
-        transition-all duration-300 ease-in-out
+        bg-white
         "
     >
       {/* details */}
@@ -33,6 +32,7 @@ const ExploreItem = () => {
             tracking-[var(--spec-news-explore-item-title-letter-spacing)]
             leading-[var(--spec-news-explore-item-title-line-height)]
             mt-[var(--spec-news-explore-item-title-margin-top)]
+            group-hover:text-white
           "
           >
             Our Origin Story
@@ -44,6 +44,12 @@ const ExploreItem = () => {
         img="https://a.storyblok.com/f/165555/3840x2160/a3e5b8f705/634caf4f13615-kprneon.png/m/311x250/smart/filters:quality(85)"
         alt="our story"
       />
+      <div
+        className="absolute w-full h-full bg-black z-[-1]
+      top-[0px] left-0 opacity-0 rounded-explore_item
+      group-hover:opacity-100 group-hover:rounded-explore_item transition-all duration-300 ease-in-out
+      "
+      ></div>
     </div>
   );
 };

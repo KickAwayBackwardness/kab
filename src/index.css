@@ -204,6 +204,7 @@
   --spec-news-explore-item-min-width: 53rem;
   --spec-news-explore-item-width: 53rem;
   --spec-news-explore-item-padding: 3.5rem 2.3rem 2.3rem;
+  --spec-news-explore-item-border-radius: 0.4rem;
 
   --spec-news-explore-item-title-font-size: 2rem;
   --spec-news-explore-item-title-font-weight: 500;
@@ -214,6 +215,9 @@
   --spec-news-explore-item-photo-aspect-ratio: 484 / 325;
   --spec-news-explore-item-photo-border-radius: 0.5rem;
   --spec-news-explore-item-photo-margin-top: 2.5rem;
+  /* icon */
+  --spec-news-explore-icon-width: 0.9rem;
+  --spec-news-explore-icon-box-size: 6rem;
 }
 
 body {
