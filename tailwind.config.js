@@ -9,6 +9,10 @@ export default {
         "line-light": "hsla(0,0%,100%,.2)",
         green: "#c0fb51",
         scroll_indicator: "var(--scroll-indicator-color)",
+        gray: "#e9e9e9",
+        admin_background: "#f8f8f8",
+        sub_header_bg: "rgba(34,34,34,0.8)",
+        sf_bg: "#e9e9e9",
       },
 
       fontSize: {
