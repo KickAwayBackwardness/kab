@@ -6,7 +6,7 @@ const NewPost = () => {
 
   return (
     <section
-      className={`fixed z-[1] left-[50%] bottom-[30px] -translate-x-[50%]  p-[6px] bg-sub_header_bg rounded-[14px] text-[14px] flex w-fit font-light show-on-begin ${
+      className={`fixed z-[3] left-[50%] bottom-[30px] -translate-x-[50%]  p-[6px] bg-sub_header_bg rounded-[14px] text-[14px] flex w-fit font-light show-on-begin ${
         isShow ? "h-[393px] min-w-[720px]" : "h-[72px] min-w-0"
       } transition-default`}
     >

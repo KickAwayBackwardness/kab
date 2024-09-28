@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/Home/Header";
-import Hero from "../../components/Home/Hero";
-import Chapter1 from "../../components/Home/Chapter1";
-import Chapter2 from "../../components/Home/Chapter2";
-import BackGround from "../../components/Home/BackGround";
+import Header from "../../components/Client/Home/Header";
+import Hero from "../../components/Client/Home/Hero";
+import Chapter1 from "../../components/Client/Home/Chapter1";
+import Chapter2 from "../../components/Client/Home/Chapter2";
+import BackGround from "../../components/Client/Home/BackGround";
 
 const Home = () => {
   return (

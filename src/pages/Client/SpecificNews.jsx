@@ -1,20 +1,22 @@
 import React from "react";
-import Header from "../../components/SpecificNews/Header/Header";
-import Cover from "../../components/SpecificNews/Cover/Cover";
-import Article from "../../components/SpecificNews/Content/Article";
-import NewsHeading from "../../components/SpecificNews/NewsHeading/NewsHeading";
+import Header from "../../components/Client/SpecificNews/Header/Header";
+import Cover from "../../components/Client/SpecificNews/Cover/Cover";
+import Article from "../../components/Client/SpecificNews/Content/Article";
+import NewsHeading from "../../components/Client/SpecificNews/NewsHeading/NewsHeading";
+import data from "../../data.json";
 
 // CSS
-import "../../components/SpecificNews/Content/specificNews.css";
-import Explore from "../../components/SpecificNews/Explore/Explore";
+import "../../components/Client/SpecificNews/Content/specificNews.css";
+import Explore from "../../components/Client/SpecificNews/Explore/Explore";
 
 const SpecificNews = () => {
+  const { newsHeading, cover, article } = data;
   return (
     <div>
       <Header />
-      <NewsHeading />
-      <Cover />
-      <Article />
+      <NewsHeading newsHeading={newsHeading} />
+      <Cover cover={cover} />
+      <Article article={article} />
       <Explore />
     </div>
   );
