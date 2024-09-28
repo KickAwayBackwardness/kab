@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/Newspaper/Header/Header";
-import ListNews from "../../components/Newspaper/ListNews/ListNews";
-import MasterHeading from "../../components/Newspaper/MasterHeading/MasterHeading";
-import NOTD from "../../components/Newspaper/NOTD/NOTD";
-import LoadMore from "../../components/Newspaper/ListNews/LoadMore";
+import Header from "../../components/Client/Newspaper/Header/Header";
+import ListNews from "../../components/Client/Newspaper/ListNews/ListNews";
+import MasterHeading from "../../components/Client/Newspaper/MasterHeading/MasterHeading";
+import NOTD from "../../components/Client/Newspaper/NOTD/NOTD";
+import LoadMore from "../../components/Client/Newspaper/ListNews/LoadMore";
 import Continue from "../../components/vendors/Continute/Continue";
 import FakeScroll from "../../utils/FakeScroll";
 

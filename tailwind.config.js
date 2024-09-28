@@ -13,6 +13,9 @@ export default {
         admin_background: "#f8f8f8",
         sub_header_bg: "rgba(34,34,34,0.8)",
         sf_bg: "#e9e9e9",
+        line: "#d3d3d3",
+        light_gray_2: "#f3f3f3",
+        error: "#FA5D29",
       },
 
       fontSize: {
