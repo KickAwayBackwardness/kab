@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const IsParallax = () => {
+const IsParallax = ({ setPhoto, photo }) => {
   const [checked, setChecked] = useState(false);
 
   return (
@@ -10,6 +10,10 @@ const IsParallax = () => {
           className="pl-[25px] relative flex items-center w-fit cursor-pointer"
           onClick={() => {
             setChecked(!checked);
+            setPhoto({
+              ...photo,
+              content: { ...photo.content, isParallax: !checked },
+            });
           }}
         >
           <div className="absolute w-[20px] h-[20px] rounded-[4px] border-[2px] border-[#d3d3d3] top-[50%] -translate-y-[50%] left-0 ">

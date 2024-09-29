@@ -1,39 +1,77 @@
 import React, { useEffect, useState } from "react";
 import DeleteField from "../DeleteField";
 import Text from "./Text";
+import { inputData } from "../../../../../redux/addNewPostSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const NumberList = ({ index }) => {
-  const [error, setEroor] = useState("");
-  const [textFieldList, setTextFieldList] = useState(["li", "li"]);
+  const dispatch = useDispatch();
+  const { fieldList } = useSelector((state) => state.addNewPostSlice);
+  const [list, setList] = useState(fieldList[index]);
+  const [error, setError] = useState("");
+
+  const inputValue = (e, index) => {
+    const updateContent = [...list.content];
+    updateContent.splice(index, 1, e.target.value);
+    setList({
+      ...list,
+      content: updateContent,
+    });
+  };
+
+  useEffect(() => {
+    dispatch(
+      inputData({
+        index,
+        data: list,
+      })
+    );
+  }, [list]);
 
   const renderTextField = () => {
-    return textFieldList.map((li, ind) => {
+    return list.content.map((li, ind) => {
       return (
         <div key={ind}>
-          <Text deleteField={deleteField} addField={addField} ind={ind} />
+          {/* <Text deleteField={deleteField} addField={addField} ind={ind} /> */}
+          <Text
+            ind={ind}
+            text={li}
+            deleteField={deleteField}
+            addField={addField}
+            inputValue={inputValue}
+          />
         </div>
       );
     });
   };
 
   const deleteField = (ind) => {
-    if (textFieldList.length <= 2) {
-      setEroor("Danh sách phải có ít nhất 2 danh mục.");
+    if (list.content.length <= 2) {
+      setError("Danh sách phải có ít nhất 2 danh mục.");
       return;
     }
-    setEroor("");
-    textFieldList.splice(ind, 1);
-    setTextFieldList([...textFieldList]);
+
+    // remove
+    const updateContent = [...list.content];
+    updateContent.splice(ind, 1);
+    setList({
+      ...list,
+      content: updateContent,
+    });
   };
 
   const addField = (ind) => {
-    setEroor("");
-    textFieldList.splice(ind + 1, 0, "li");
-    setTextFieldList([...textFieldList]);
+    // reset error
+    setError("");
+
+    // add
+    const updateContent = [...list.content];
+    updateContent.splice(ind + 1, 0, "");
+    setList({
+      ...list,
+      content: updateContent,
+    });
   };
-  useEffect(() => {
-    renderTextField();
-  }, [textFieldList]);
 
   return (
     <div className="mb-[50px]">

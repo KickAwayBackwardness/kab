@@ -31,7 +31,7 @@
         "subHeading": null
       }
     },
-    { "type": "Devider" },
+    { "type": "Devider", "content": null },
     {
       "type": "Pharagraph",
       "content": {

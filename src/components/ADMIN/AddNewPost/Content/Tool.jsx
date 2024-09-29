@@ -15,37 +15,37 @@ const Tool = () => {
       <div className=" flex justify-between h-fit bg-admin_background pb-[20px]">
         <div
           className="button bg-black h-fit font-bold flex items-center text-white pointer-events-auto"
-          onClick={() => add("Pharagraph")}
+          onClick={() => add("PHARAGRAPH")}
         >
           Pharagraph
         </div>
         <div
           className="button bg-black h-fit font-bold flex items-center text-white pointer-events-auto"
-          onClick={() => add("Photo")}
+          onClick={() => add("PHOTO")}
         >
           Photo
         </div>
         <div
           className="button bg-black h-fit font-bold flex items-center text-white pointer-events-auto"
-          onClick={() => add("BulletList")}
+          onClick={() => add("BULLETLIST")}
         >
           Bullet List
         </div>
         <div
           className="button bg-black h-fit font-bold flex items-center text-white pointer-events-auto"
-          onClick={() => add("NumberList")}
+          onClick={() => add("NUMBERLIST")}
         >
           Number List
         </div>
         <div
           className="button bg-black h-fit font-bold flex items-center text-white pointer-events-auto"
-          onClick={() => add("Signature")}
+          onClick={() => add("SIGNATURE")}
         >
           Signature
         </div>
         <div
           className="button bg-black h-fit font-bold flex items-center text-white pointer-events-auto"
-          onClick={() => add("Devider")}
+          onClick={() => add("DEVIDER")}
         >
           Devider
         </div>
