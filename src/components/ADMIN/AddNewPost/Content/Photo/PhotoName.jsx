@@ -1,6 +1,6 @@
 import React from "react";
 
-const PhotoName = () => {
+const PhotoName = ({ inputValue }) => {
   const error = "";
   return (
     <div className=" mt-[20px]">
@@ -13,9 +13,10 @@ const PhotoName = () => {
         <input
           type="text"
           spellCheck={false}
-          name="title"
+          name="name"
           className="input-default"
           placeholder="Tên hình"
+          onChange={(e) => inputValue(e)}
         />
       </div>
       {error && (

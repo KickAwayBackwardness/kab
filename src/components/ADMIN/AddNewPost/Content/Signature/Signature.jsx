@@ -1,8 +1,34 @@
 import React from "react";
 import DeleteField from "../DeleteField";
+import { useEffect, useState } from "react";
+import { inputData } from "../../../../../redux/addNewPostSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Signature = ({ index }) => {
+  const dispatch = useDispatch();
+  const { fieldList } = useSelector((state) => state.addNewPostSlice);
+  const [signature, setSignature] = useState(fieldList[index]);
+  const inputValue = (e) => {
+    setSignature({
+      ...signature,
+      content: {
+        ...signature.content,
+        [e.target.name]: e.target.value,
+      },
+    });
+  };
+
+  useEffect(() => {
+    dispatch(
+      inputData({
+        index,
+        data: signature,
+      })
+    );
+  }, [signature]);
+
   const error = "Trường này là bắt buôc.";
+
   return (
     <div>
       <div className="mb-[50px]">
@@ -21,9 +47,11 @@ const Signature = ({ index }) => {
               <input
                 type="text"
                 spellCheck={false}
-                name="title"
+                name="text"
                 className="input-default"
                 placeholder="Nhập chữ ký hoặc nguồn."
+                value={signature.content.text}
+                onChange={(e) => inputValue(e)}
               />
             </div>
             {error && (

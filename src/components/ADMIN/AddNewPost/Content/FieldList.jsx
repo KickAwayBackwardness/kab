@@ -9,26 +9,18 @@ import BulletList from "./BulletList/BulletList";
 
 const FieldList = () => {
   const { fieldList } = useSelector((state) => state.addNewPostSlice);
+
   const renderList = () => {
     if (fieldList.length) {
       return fieldList.map((item, index) => {
-        if (item === "Pharagraph") {
+        if (item.type === "PHARAGRAPH") {
           return (
             <div key={index}>
               <Pharagraph index={index} />
             </div>
           );
         }
-
-        if (item === "Signature") {
-          return (
-            <div key={index}>
-              <Signature index={index} />
-            </div>
-          );
-        }
-
-        if (item === "Photo") {
+        if (item.type === "PHOTO") {
           return (
             <div key={index}>
               <Photo index={index} />
@@ -36,21 +28,30 @@ const FieldList = () => {
           );
         }
 
-        if (item === "Devider") {
+        if (item.type === "DEVIDER") {
           return (
             <div key={index}>
               <Devider index={index} />
             </div>
           );
         }
-        if (item === "NumberList") {
+
+        if (item.type === "SIGNATURE") {
+          return (
+            <div key={index}>
+              <Signature index={index} />
+            </div>
+          );
+        }
+
+        if (item.type === "NUMBERLIST") {
           return (
             <div key={index}>
               <NumberList index={index} />
             </div>
           );
         }
-        if (item === "BulletList") {
+        if (item.type === "BULLETLIST") {
           return (
             <div key={index}>
               <BulletList index={index} />

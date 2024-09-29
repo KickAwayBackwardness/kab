@@ -1,6 +1,6 @@
 import React from "react";
 
-const SubTitle = () => {
+const SubTitle = ({ subHeading, inputValue }) => {
   const error = "";
   return (
     <div className="flex-1">
@@ -13,9 +13,11 @@ const SubTitle = () => {
         <input
           type="text"
           spellCheck={false}
-          name="title"
+          name="subHeading"
           className="input-default"
           placeholder="Tiêu đề phụ"
+          value={subHeading}
+          onChange={(e) => inputValue(e)}
         />
       </div>
       {error && (

@@ -4,6 +4,7 @@ import General from "../../components/ADMIN/AddNewPost/General/General";
 import NewsHeading from "../../components/ADMIN/AddNewPost/NewsHeading/NewsHeading";
 import Content from "../../components/ADMIN/AddNewPost/Content/Content";
 import Cover from "../../components/ADMIN/AddNewPost/Cover/Cover";
+import PostButton from "../../components/ADMIN/AddNewPost/PostButton/PostButton";
 
 const AddNewPost = () => {
   return (
@@ -22,19 +23,7 @@ const AddNewPost = () => {
           </div>
 
           {/* right - button */}
-          <div className="w-[20%] sticky top-[50px] h-[150px]">
-            <button className=" button relative text-[18px] font-semibold bg-black text-white w-full h-[72px] mb-[16px]">
-              Đăng bài viết
-            </button>
-
-            <p className="mt-[8px] mb-[16px] font-light text-[15px]">
-              Xem{" "}
-              <strong className="font-semibold">
-                Preview <i className="fa fa-external-link-alt"></i>
-              </strong>{" "}
-              trước khi đăng bài viết.
-            </p>
-          </div>
+          <PostButton />
         </div>
       </div>
       <Preview />

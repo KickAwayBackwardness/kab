@@ -1,7 +1,8 @@
 import React from "react";
 
-const Title = () => {
+const Title = ({ sectionHeading, inputValue }) => {
   const error = "";
+
   return (
     <div className="flex-1">
       <div>
@@ -13,9 +14,11 @@ const Title = () => {
         <input
           type="text"
           spellCheck={false}
-          name="title"
+          name="sectionHeading"
           className="input-default"
-          placeholder="Tiêu đềchính"
+          placeholder="Tiêu đề chính"
+          value={sectionHeading}
+          onChange={(e) => inputValue(e)}
         />
       </div>
       {error && (
