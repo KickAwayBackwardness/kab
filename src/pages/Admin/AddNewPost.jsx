@@ -1,5 +1,4 @@
 import React from "react";
-import Preview from "../../components/ADMIN/AddNewPost/Preview";
 import General from "../../components/ADMIN/AddNewPost/General/General";
 import NewsHeading from "../../components/ADMIN/AddNewPost/NewsHeading/NewsHeading";
 import Content from "../../components/ADMIN/AddNewPost/Content/Content";
@@ -26,7 +25,6 @@ const AddNewPost = () => {
           <PostButton />
         </div>
       </div>
-      <Preview />
     </div>
   );
 };

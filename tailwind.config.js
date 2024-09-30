@@ -16,6 +16,7 @@ export default {
         line: "#d3d3d3",
         light_gray_2: "#f3f3f3",
         error: "#FA5D29",
+        lemon: "#dceda9",
       },
 
       fontSize: {
